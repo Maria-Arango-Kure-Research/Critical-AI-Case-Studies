@@ -1,21 +1,26 @@
 # Shipment Disruptions
 
-Participants work with shipment records from several international routes. They train a model to forecast days late, then use the forecast as an input to a second model that recommends a mitigation action.
+Students train a model on shipment records to forecast delivery delays. They use those forecasts and examples of past shipping decisions to train a second model that suggests how to respond. They critically assess how useful the model is, what it misses and what it gets wrong, the data’s limitations, and what business value adopting them could offer.
 
 ## Learning objectives
 
-- Explain how the notebook prepares shipment records and uses them to train and test two models.
-- Interpret forecast errors and classification results, including performance for individual mitigation actions.
-- Use evidence from the notebook to assess the value of the models, including what a simpler shipping rule can do.
+By the end of the case, students should be able to:
+
+- Explain how a predictive AI system learns patterns from training data and uses them to make predictions.
+- Explain how data quality and the distribution of outcomes affect what a model learns and how its performance should be interpreted.
+- Assess how well a model evaluation reflects the conditions in which the model would be used.
+- Explain how prediction errors can carry through a system when one model’s output becomes another model’s input.
+- Compare a machine learning model with a simpler alternative using evidence about their performance.
+- Justify a recommendation about whether and how to adopt an AI system, taking into account its business value, limitations, and the role of human judgment.
 
 ## Before teaching
 
-The student notebook uses prewritten Python. Allow approximately two hours for a guided session and discussion, with additional time if participants will explore the notebook independently. See the [teaching notes](instructor-materials/teaching-notes.md) for setup and facilitation.
+The case is designed for business students with little or no programming experience. Familiarity with shipping routes, lead times, and common responses to delays helps students interpret the results. The Python code is prewritten in the notebook.
 
-## Materials
+Allow about two hours for the lab. See the [teaching notes](instructor-materials/teaching-notes.md) for preparation, suggested timing, and discussion points.
 
-- [Student materials](case-materials/)
-- [Instructor materials](instructor-materials/)
-- [Dataset builder and design notes](development/)
+## Case materials
 
-Several activities use charts. The notebook also prints the model metrics and feature rankings. Check that participants can access the values needed for the discussion in your chosen setup.
+- [Student materials](case-materials/) include the scenario, notebook, dataset instructions, and discussion and reflection questions.
+- [Instructor materials](instructor-materials/) include teaching notes, annotations, the dataset codebook, and a rubric for the reflection.
+- [Development materials](development/) include the dataset builder and the rationale for the case design.
